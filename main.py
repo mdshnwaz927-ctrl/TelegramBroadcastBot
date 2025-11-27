@@ -11,7 +11,6 @@ users = set() # store subscribed users
 
 
 def start(update, context):
-user_id = update.effective_user.id
 users.add(user_id)
 update.message.reply_text("You are subscribed to broadcast messages.")
 
